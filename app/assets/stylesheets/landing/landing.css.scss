@@ -1,10 +1,15 @@
-#hero {
-  width: 100%;
+// Header
+
+#logo {
+  display: block;
+  margin: 9% auto 11% auto;
+  width: 52%;
 }
 
 header {
+  background: transparent image-url('hero.jpg') no-repeat center;
+  background-size: cover;
   overflow: hidden;
-  height: 85%;
 }
 
 html, body {
