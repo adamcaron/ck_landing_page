@@ -1,3 +1,19 @@
+// Why Commerce Kitchen
+h2 span {
+  font-weight: normal;
+}
+
+h2 {
+  text-shadow: .5px .5px .5px #7a5e61;
+  -moz-box-shadow:    0 0 16px 0px #7a5e61;
+  -webkit-box-shadow: 0 0 16px 0px #7a5e61;
+  box-shadow:         0 0 16px 0px #7a5e61;
+  background-color: #F6595B;
+  color: #f8f8f8;
+  padding: 25px 30px;
+  margin-top: 0;
+}
+
 // Header
 
 #logo {
@@ -20,15 +36,15 @@ html, body {
 
 @media (min-width: 1100px) {
 
-  // Freeze the growth of the logo
-  #logo {
+  // Header
+
+  #logo { // Freeze the growth of the logo
     margin: 99px auto 121px;
     width: 572px;
     height: 399px;
   }
 
-  // Keep the header above the fold, from hence forth.
-  header {
+  header { // Keep the header above the fold, from hence forth.
     max-height: 619px;
   }
 
