@@ -7,7 +7,7 @@
 }
 
 header {
-  background: transparent image-url('hero.jpg') no-repeat center;
+  background: transparent image-url('hero.jpg') no-repeat center top;
   background-size: cover;
   overflow: hidden;
 }
@@ -20,12 +20,16 @@ html, body {
 
 @media (min-width: 1100px) {
 
+  // Freeze the growth of the logo
   #logo {
-    width: 50%;
+    margin: 99px auto 121px;
+    width: 572px;
+    height: 399px;
   }
 
+  // Keep the header above the fold, from hence forth.
   header {
-    max-height: 95%; // header stays above the fold
+    max-height: 619px;
   }
 
 } // End 1100px min-width
