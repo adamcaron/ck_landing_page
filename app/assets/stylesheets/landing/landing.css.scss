@@ -1,3 +1,64 @@
+// What We Do
+
+#what-we-do h3  {
+  margin: 0 0 18px 0;
+  font-size: 18px;
+  color: #323232;
+}
+
+#what-we-do p {
+  margin: 0;
+  color: #323232;
+}
+
+// #what-we-do article
+.first {
+  border-bottom: 1px solid #eee;
+}
+
+#what-we-do article {
+  flex: 1 100%;
+
+  line-height: 24px;
+  padding: 35px 30px 30px;
+}
+
+#what-we-do {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  margin: 0;
+}
+
+#tagline span {
+  font-size: 20px;
+}
+
+#tagline {
+  line-height: 30px;
+  font-size: 32px;
+  color: #f8f8f8;
+  padding: 30px 30px 20px 30px;
+  margin: 0;
+}
+
+#crossbar {
+  margin-bottom: -114px;
+  background-color: #F6595B;
+  height: 114px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
 // Header
 
 #logo {
@@ -18,18 +79,27 @@ html, body {
 
 /* ======================================= */
 
+@media (min-width: 700px) {
+
+  .first {
+    border-bottom: 0;
+    border-right: 1px solid #eee;
+  }
+
+  #what-we-do article {
+    flex: 1;
+  }
+} // End 700px
+
 @media (min-width: 1100px) {
 
-  // Freeze the growth of the logo
-  #logo {
+  #logo { // Freeze the growth of the logo
     margin: 99px auto 121px;
     width: 572px;
     height: 399px;
   }
 
-  // Keep the header above the fold, from hence forth.
-  header {
+  header { // Keep the header above the fold, from hence forth.
     max-height: 619px;
   }
-
-} // End 1100px min-width
+} // End 1100px
