@@ -15,3 +15,17 @@ header {
 html, body {
   height: 100%;
 }
+
+/* ======================================= */
+
+@media (min-width: 1100px) {
+
+  #logo {
+    width: 50%;
+  }
+
+  header {
+    max-height: 95%; // header stays above the fold
+  }
+
+} // End 1100px min-width
