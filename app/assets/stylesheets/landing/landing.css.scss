@@ -1,17 +1,33 @@
-// Why Commerce Kitchen
-h2 span {
-  font-weight: normal;
+// What We Do
+
+#what-we-do h3  {
+  margin: 0 0 18px 0;
+  font-size: 18px;
+  color: #323232;
 }
 
-h2 {
-  text-shadow: .5px .5px .5px #7a5e61;
-  -moz-box-shadow:    0 0 16px 0px #7a5e61;
-  -webkit-box-shadow: 0 0 16px 0px #7a5e61;
-  box-shadow:         0 0 16px 0px #7a5e61;
+#what-we-do p {
+  margin: 0;
+  color: #323232;
+}
+
+#what-we-do article {
+  border-bottom: 1px solid #eee;
+  line-height: 24px;
+  padding: 35px 30px 30px;
+}
+
+#tagline span {
+  font-size: 20px;
+}
+
+#tagline {
+  line-height: 30px;
+  font-size: 32px;
   background-color: #F6595B;
   color: #f8f8f8;
-  padding: 25px 30px;
-  margin-top: 0;
+  padding: 30px 30px 20px 30px;
+  margin: 0;
 }
 
 // Header
