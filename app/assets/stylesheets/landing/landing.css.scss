@@ -43,10 +43,20 @@
 #tagline {
   line-height: 30px;
   font-size: 32px;
-  background-color: #F6595B;
   color: #f8f8f8;
   padding: 30px 30px 20px 30px;
   margin: 0;
+}
+
+#crossbar {
+  margin-bottom: -114px;
+  background-color: #F6595B;
+  height: 114px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 // Header
