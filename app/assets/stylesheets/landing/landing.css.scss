@@ -1,3 +1,45 @@
+
+// Contact
+
+#contact button {
+  width: 100%;
+  padding: 12px 0;
+  border: 0;
+  text-transform: uppercase;
+  background-color: #62cff0;
+  color: white;
+}
+
+#contact textarea {
+  height: 120px;
+}
+
+#contact input,
+#contact textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+  margin: 8px 0 20px 0;
+}
+
+#contact label {
+  font-style: italic;
+}
+
+#contact form {
+  padding: 20px 30px 50px;
+  background-color: #eaeaea;
+}
+
+#contact h2 {
+  line-height: 30px;
+  font-size: 32px;
+  color: #F6595B;
+  background-color: white;
+  padding: 30px 0 20px 30px;
+  margin: 0;
+}
+
 // What We Do
 
 #what-we-do h3  {
@@ -11,28 +53,17 @@
   color: #323232;
 }
 
-// #what-we-do article
-.first {
+#what-we-do article .first {
   border-bottom: 1px solid #eee;
 }
 
 #what-we-do article {
-  flex: 1 100%;
-
   line-height: 24px;
   padding: 35px 30px 30px;
 }
 
 #what-we-do {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-
+  background-color: white;
   margin: 0;
 }
 
@@ -73,22 +104,48 @@ header {
   overflow: hidden;
 }
 
-html, body {
-  height: 100%;
+.stackable {
+  width: 100%;
+  flex: 1 100%;
+}
+
+.flex-container {
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 /* ======================================= */
 
 @media (min-width: 700px) {
 
-  .first {
+  #contact .second label,
+  #contact .second input,
+  #contact button {
+    width: 98%;
+    display: block;
+    float: right;
+  }
+
+  #contact input,
+  #contact textarea {
+    width: 98%;
+  }
+
+  #what-we-do article .first {
     border-bottom: 0;
     border-right: 1px solid #eee;
   }
 
-  #what-we-do article {
+  .stackable {
     flex: 1;
   }
+
 } // End 700px
 
 @media (min-width: 1100px) {
@@ -103,3 +160,10 @@ html, body {
     max-height: 619px;
   }
 } // End 1100px
+
+@media (min-width: 1130px) {
+
+  #tagline {
+    padding-left: 0;
+  }
+} // End 1130px
