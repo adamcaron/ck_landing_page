@@ -5,13 +5,13 @@
 <div id="crossbar"></div>
 
 <main>
-  <h2 id="tagline">
+  <h1 id="tagline">
     <span>Don't just build an app:</span><br/>
     Build your business.
-  </h2>
+  </h1>
 
-  <section id="what-we-do">
-    <article class="first">
+  <section id="what-we-do" class="flex-container">
+    <article class="stackable first">
       <h3>
         Commerce Kitchen uses technology
         to build your business.
@@ -24,7 +24,7 @@
         and empower your people.
       </p>
     </article>
-    <article>
+    <article class="stackable">
       <p>
         We build web and mobile software
         for organizations looking to achieve
@@ -37,4 +37,39 @@
       </ol>
     </article>
   </section>
+
+  <section id="contact">
+
+    <h2>Let's Talk Shop</h2>
+
+    <!-- <h3>Have a question or ready to get started? Fill out the form below and we'll be in touch.</h3> -->
+
+    <form>
+
+      <div class="flex-container">
+        <div class="stackable">
+          <label>Your Name</label><br/>
+          <input type="text" name="name" />
+        </div>
+        <div class="stackable second">
+          <label>Your Email</label><br/>
+          <input type="text" name="email" />
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div class="stackable">
+          <label>How can we help you?</label><br/>
+          <textarea name="message"></textarea>
+        </div>
+        <div class="stackable second">
+          <label>Which is bigger, two or 22?</label><br/>
+          <input type="text" name="quiz" />
+          <button>Send</button>
+        </div>
+      </div>
+
+    </form>
+  </section>
+
 </main>
