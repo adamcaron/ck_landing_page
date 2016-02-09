@@ -1,4 +1,88 @@
 
+// Footer
+
+.link-divider {
+  margin: 0 10px;
+}
+
+#social i {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+#social li a {
+  color: #323232;
+  background-color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  list-style: none;
+  transition-property: background-color, color;
+  transition-duration: 0.35s;
+}
+
+#social li a:hover {
+  color: white;
+  background-color: #62cff0;
+}
+
+#social li {
+  width: 42px; /* fallback for browsers without support for calc() */
+  width: calc(100% / 6.5);
+  display: inline-block;
+}
+
+#social {
+  width: 300px;
+  padding: 0;
+  margin: 40px auto 25px;
+}
+
+address a, address a:visited {
+  color: white;
+  text-decoration: none;
+  transition: color 0.35s;
+}
+
+address a:hover {
+  color: #F6595B;
+}
+
+address {
+  line-height: 24px;
+  font-size: 16px;
+  padding: 20px 0;
+  font-style: normal;
+}
+
+.partner {
+  height: 32px;
+}
+
+.award {
+  width: 175px;
+}
+
+footer img {
+  margin: 50px auto;
+  display: block;
+}
+
+footer h2 {
+  background-color: #212121;
+  padding: 20px 0;
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  background-color: #323232;
+  color: white;
+}
+
 // Contact
 
 #contact button {
@@ -85,7 +169,7 @@
   height: 114px;
 }
 
-main {
+.pagewrap { // main & footer
   margin: 0 auto;
   max-width: 1100px;
 }
