@@ -1,8 +1,8 @@
 
 // Footer
 
-.link-divider {
-  margin: 0 10px;
+#tidings {
+  display: none;
 }
 
 #social i {
@@ -39,6 +39,10 @@
   margin: 40px auto 25px;
 }
 
+.link-divider {
+  margin: 0 10px;
+}
+
 address a, address a:visited {
   color: white;
   text-decoration: none;
@@ -56,15 +60,15 @@ address {
   font-style: normal;
 }
 
-.partner {
+#partners img {
   height: 32px;
 }
 
-.award {
+#awards img {
   width: 175px;
 }
 
-footer img {
+#awards img, #partners img {
   margin: 50px auto;
   display: block;
 }
@@ -78,6 +82,7 @@ footer h2 {
 }
 
 footer {
+  padding: 20px 0 0 0;
   text-align: center;
   background-color: #323232;
   color: white;
@@ -95,7 +100,12 @@ footer {
 }
 
 #contact textarea {
+  margin: 8px 0 0px 0;
   height: 120px;
+}
+
+#contact input {
+  margin: 8px 0 20px 0;
 }
 
 #contact input,
@@ -103,7 +113,6 @@ footer {
   box-sizing: border-box;
   width: 100%;
   padding: 18px;
-  margin: 8px 0 20px 0;
 }
 
 #contact label {
@@ -111,7 +120,7 @@ footer {
 }
 
 #contact form {
-  padding: 20px 30px 50px;
+  padding: 20px 30px 40px;
   background-color: #eaeaea;
 }
 
@@ -126,14 +135,14 @@ footer {
 
 // What We Do
 
-#what-we-do h3  {
-  margin: 0 0 18px 0;
-  font-size: 18px;
+#what-we-do p {
+  margin: 0;
   color: #323232;
 }
 
-#what-we-do p {
-  margin: 0;
+#what-we-do h3  {
+  margin: 0 0 18px 0;
+  font-size: 18px;
   color: #323232;
 }
 
@@ -150,6 +159,8 @@ footer {
   background-color: white;
   margin: 0;
 }
+
+// Header
 
 #tagline span {
   font-size: 20px;
@@ -169,13 +180,6 @@ footer {
   height: 114px;
 }
 
-.pagewrap { // main & footer
-  margin: 0 auto;
-  max-width: 1100px;
-}
-
-// Header
-
 #logo {
   display: block;
   margin: 9% auto 11% auto;
@@ -187,6 +191,8 @@ header {
   background-size: cover;
   overflow: hidden;
 }
+
+// General Layout Element Flow Styles
 
 .stackable {
   width: 100%;
@@ -202,6 +208,11 @@ header {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+}
+
+.pagewrap { // main & footer
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 /* ======================================= */
@@ -226,11 +237,117 @@ header {
     border-right: 1px solid #eee;
   }
 
-  .stackable {
+  main .stackable {
     flex: 1;
   }
-
 } // End 700px
+
+@media (min-width: 1020px) {
+
+  // Footer
+
+  #social {
+    margin: 30px 0px 25px auto;
+    text-align: center;
+  }
+
+  address {
+    line-height: 22px;
+}
+
+  #get-in-touch div {
+    padding: 10px 75px 15px 0;
+  }
+
+  #tidings img {
+    margin-top: 60px;
+    width: 160px;
+    height: 160px;
+  }
+
+  #tidings div {
+    width: 100%;
+    padding: 10px 0 15px 75px;
+  }
+
+  #tidings {
+    z-index: 1;
+    display: block;
+  }
+
+  footer .bottom div {
+    margin: 4px 0 0 0;
+    height: 292px;
+  }
+
+  #partners img {
+    height: 40px;
+    margin: 10px 0 20px auto;
+    padding: 0;
+  }
+
+  #partners div {
+    padding: 40px 75px 30px 0;
+  }
+
+  #awards img {
+    vertical-align: middle;
+    width: 120px;
+    display: inline;
+    margin: 0px 20px 0px auto;
+  }
+
+  #awards div {
+    padding: 40px 0 30px 75px;
+  }
+
+  footer .top div {
+    height: 130px;
+    margin: 4px 0;
+  }
+
+  footer .right {
+    text-align: right;
+  }
+
+  footer .left {
+    text-align: left;
+  }
+
+  footer .left div, footer .right div {
+    background-color: #323232;
+  }
+
+  footer h2 span {
+    text-transform: none;
+  }
+
+  footer h2 {
+    padding: 20px 75px;
+    background-color: transparent;
+  }
+
+  footer .crossbar {
+    margin-bottom: -62px; // pull headers into crossbar
+    background-color: #323232;
+    height: 62px;
+  }
+
+  footer .stackable {
+    height: 100%;
+    flex: 1 50%;
+  }
+
+  footer {
+    background-color: #212121;
+  }
+
+  // Contact
+
+  #contact {
+    margin-bottom: 20px;
+  }
+} // End 1020px
 
 @media (min-width: 1100px) {
 
