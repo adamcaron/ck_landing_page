@@ -260,9 +260,14 @@ header {
   }
 
   #tidings img {
-    margin-top: 60px;
+    opacity: .9;
+    margin: 60px 5px 0 0;
     width: 160px;
     height: 160px;
+  }
+
+  #tidings img:hover {
+    opacity: 1;
   }
 
   #tidings div {
@@ -363,6 +368,16 @@ header {
 } // End 1100px
 
 @media (min-width: 1130px) {
+
+  // Footer
+
+  #tidings img {
+    margin: 50px 10px 0 0;
+    width: 170px;
+    height: 170px;
+  }
+
+  // Header
 
   #tagline {
     padding-left: 0;

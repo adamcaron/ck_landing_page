@@ -106,9 +106,13 @@
     <section class="stackable left bottom" id="tidings">
       <h2>Tidings</h2>
       <div>
-        <img src="" />
-        <img src="" />
-        <img src="" />
+
+        <% @recent_posts.each do |post| %>
+          <a href= <%= post.link %> >
+            <%= image_tag post.image_url, title: post.caption, alt: "Recent Instagram Post by Commerce Kitchen" %>
+          </a>
+        <% end %>
+
       </div>
     </section>
 

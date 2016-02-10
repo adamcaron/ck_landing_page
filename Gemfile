@@ -12,6 +12,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'unicorn'
 gem 'normalize-rails'
 gem 'font-awesome-rails'
+gem 'figaro'
+gem 'instagram'
 
 group :development, :test do
   gem 'byebug'
@@ -20,6 +22,7 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec-rails'
   gem 'binding_of_caller'
+  gem 'awesome_print'
 end
 
 group :development do
