@@ -1,0 +1,350 @@
+<main id="docs">
+
+  <h1>Process Documentation</h1>
+
+  Here's my thought process.
+  There are a few images (including some from my notebook in the first parts of this process documentation) which may take a moment to load.
+
+
+
+
+  <h2>Need Constraints</h2>
+
+  <p>Here's where it all began.</p>
+
+  <p>From the project spec: "This task is intentionally open-ended to give you design freedom ... ."</p>
+
+  <p>With as broad a task as "create an immersive landing page", the first challenge was to define constraints, as <a href="http://vanseodesign.com/web-design/constraints-help-design/">design can exist only within the helpful bounds of requirements</a>.</p>
+
+  <p>What was the purpose of this "immersive landing page"? Should I have extrapolated the purpose since it hadn't been given to me?</p>
+
+  <p>First thing I did: (what I always do when I need direction) turn to a blank page of my notebook.</p>
+
+  <ul>
+    <li>Set the goal + purpose</li>
+    <li>Defined a successful outcome</li>
+    <li>(Sprinkled in a few words of encouragement to kick off the process haha)</li>
+  </ul>
+
+  <p>Then I searched for clues:</p>
+
+  <ul>
+    <li>Combed through the project instructions</li>
+    <li>Extracted key points and simplified the language</li>
+    <li><strong>Consolidated it into 3 areas I'd be evaluated on:</strong>
+      <ul>
+        <li>All Aspects of <strong>Design</strong> / User Interface / User Experience</li>
+        <li>Problem Solving <strong>Process</strong> / Demonstrate thought process / Document Issues + Solution</li>
+        <li>Technical aspect of solution / <strong>Code</strong> Quality / Rails: Single View</li>
+      </ul></li>
+  </ul>
+
+  <%= image_tag "process/01_process" %>
+
+  <p>In further search of constraints, I explored some of my options: I could either use the same elements as were already on commercekitchen.com or use different elements. Also, the solution could be very similar to Commerce Kitchen's existing solution, or it could be radically different (or anywhere in between).</p>
+
+  <%= image_tag "process/02_process" %>
+
+  <p>I brainstormed potential page elements and realized I could use copy from Commerce Kitchen's social media profiles, which would help to create a structure and a story for the design to stand on. Additionally, I identified the website's various potential audiences and began to prioritize their importance.</p>
+
+  <%= image_tag "process/03_process" %>
+
+  <p>Identified the copy that could be used (based on Commerce Kitchen's social media copy).</p>
+
+  <%= image_tag "process/04_process" %>
+
+  <p>Began to consolidate the various page elements and prioritize them based on importance and relevance to the most important visitor (new client).</p>
+
+  <%= image_tag "process/05_process" %>
+
+  <p>Took a break, then came back with a fresh mind. I set the goal for that session, then defined the elements that would appear on mobile:</p>
+
+  <%= image_tag "process/07_process" %>
+
+  <p>Chose a logo format and decided which background image to use. I wanted to use the 'chair/office' image from Commerce Kitchen's brand identity package, but there wasn't an original, high-res image available so I decided to search for a new one. I went to <a href="https://unsplash.com/">Unsplash</a> and searched for 'office' when comically, the very same image I wanted to use from C.K.'s brand identity package appeared in the search results!</p>
+
+  <%= image_tag "process/08_process" %>
+
+  <p>Explored what would come after the title image and logo. What copy should be used? Tagline? One paragraph or two?</p>
+
+  <%= image_tag "process/09_process" %>
+
+  <p>Identified two potential format options for the copy, then decided the footer should be center-justified (on mobile) particularly because all of the logos (awards / partners) in their irregularity would be more appealing with center justification. The contact information at the bottom could have been left justified, which would have made it easier to read but ultimately, on mobile, it needed to be center justified to match the rest of the footer elements.</p>
+
+  <%= image_tag "process/10_process" %>
+
+  <p>With the header, body, and footer defined, it was time to open Illustrator and create a rough wireframe for the mobile layout.</p>
+
+
+
+
+  <h2>Quick Rough</h2>
+
+  <p>What came next was a mobile wireframe. It's purpose was simply to
+  <ul>
+    <li>get the elements on the page,</li>
+    <li>visualize the layout with text, and</li>
+    <li>get a feel for element spacing.</li>
+  </ul>
+  The plan is to use Monserrat but for now the text here is portrayed in Helvetica.</p>
+
+  <%= image_tag "process/mobile_rough-01" %>
+
+  <p>At this point, the contact form and footer were similar to Commerce Kitchen's existing design. The point here however was to move forward and get a minimally viable product up and running.
+
+  <p>In addition to an area that communicates <em>why</em> to contact Commerce Kitchen, unique design elements (at this point) included left-justified body text for readability, and center-justified text in the footer (due to the symetrically balanced logo shapes). The design also emphasized plenty of white/negative space for the viewer's eyes to rest large form input fields for easy use on mobile.</p>
+
+  <h2>Second Rough</h2>
+
+  <p>Before delving into a more comprehensive design, it was evident that a second rough design would be necessary.</p>
+
+  <p>Function of this design iteration:</p>
+
+  <ul>
+    <li>Established points of emphasis</li>
+    <li>Created a path through the design via contrast</li>
+    <li>Adjusted typography emphasis based on the message</li>
+  </ul>
+
+  <p>I sketched out typographical elements I wanted to emphasize, then implemented the changes ...</p>
+
+  <%= image_tag "process/12_process" %>
+  <%= image_tag "process/13_process" %>
+  <%= image_tag "process/mobile_rough-02" %>
+
+  <p>I was pretty confident in the layout at this point.</p>
+
+  <p><strong>Next steps:</strong></p>
+
+  <p>Layer in colors, different opacities to create depth: weight in certain areas to move people's eyes through the page</p>
+
+  <p>Then, code the mobile design and tweak it towards the tablet and desktop design.</p>
+
+
+
+
+  <h2>Bring in Color</h2>
+
+  <p><strong>Notes about the following design:</strong></p>
+
+  <p>I chose to use C.K.'s existing brand colors.</p>
+
+  <p>The red complements the warmth of the wood floor in the image, so it's preferable up at the top. It's vibrant and lively.</p>
+
+  <p>Blue for both headers is a little too much of that blue.</p>
+
+  <p>The charcoal is used in the headers</p>
+
+  <p>I chose not to use the yellow for the form-submit button, nor for the headers because if yellow was the background, then the text would need to be black and that black/yellow combo. too closely resembles 'WARNING' or 'CAUTION' which is NOT what a person should have in mind when viewing Commerce Kitchen's landing page.</p>
+
+  <h3>Options</h3>
+
+  <p>Since I decided to use the existing brand colors, and since yellow was ruled out, I had the choice of blue or red for the accent color:</p>
+
+  <p>Red for the headers and blue for the submit button worked ...</p>
+  <%= image_tag "process/mobile_comp-03" %>
+
+  <p>... What did it look like with blue for the headers and red for the form-submit? ...</p>
+  <%= image_tag "process/mobile_comp-02" %>
+
+  <p>... That was more blue than I wanted to use in the layout. Also, I wasn't wild about red for the form-submit (red could be connoted with 'warning' or 'danger' on the web, so it wasn't the best color for our call-to-action here).</p>
+
+  <p>One final combo to explore ...</p>
+  <%= image_tag "process/mobile_comp-01" %>
+
+  <p>... aaaaaaand I wasn't wild about that either. The header colors should remain consistent, and using a color in the header, then on the call-to-action wasn't consistent either.</p>
+
+
+
+
+  <h2>Began Coding</h2>
+
+  <p>Initialized the Rails app and setup the first view.</p>
+
+
+  <h3>Header</h3>
+
+  <p>Coded the header. Got it looking good on mobile (portrait and landscape), then tablet, then Desktop</p>
+
+  <p>mobile portrait ...</p>
+  <%= image_tag "process/15_process_header_mobile" %>
+
+  <p>mobile landscape ...</p>
+  <%= image_tag "process/16_process_header_mobile" %>
+
+  <p>tablet portrait ...</p>
+  <%= image_tag "process/17_process_header_tablet" %>
+
+  <p>tablet landscape ...</p>
+  <%= image_tag "process/18_process_header_tablet" %>
+
+  <p>Desktop ...</p>
+  <%= image_tag "process/19_process_header-desktop" %>
+
+
+  <h3>Next Up: About / Why Us / What We Do</h3>
+
+  <p>Implemented the sections that describe a bit about C.K.. Got it looking good on mobile, tablet and desktop.</p>
+
+  <h4>Decision Time</h4>
+
+  <p>It was time to decide how to handle responsivenes.</p>
+
+  <h4>Framework or no framework?</h4>
+
+  <p>I decided to hand-roll the responsiveness and here's why. The primary function of a CSS framework (Bootstrap / Materialize / Fountation / Semantic UI) would have been to easily implement a responsive layout. These frameworks however come with A TON of additional style rules that often need to be overridden and wrestled with. It can be rather annoying to import hundreds of lines of styles simply to implement a feature (responsiveness) that takes merely a dozen lines of CSS at most.</p>
+
+  <p>For the sake of exploration / experimentation, I decided to investigate <a href="http://semantic-ui.com/">Semantic UI</a>, the least invasive CSS framework in my opinion. I've used it successfully in the past and thought it was worth a try again for this project.</p>
+
+  <p>I installed Semantic and, lo and behold, it stubbornly began to enchroach upon my ability to control the typography. After fiddling with it for a while I decided it would take an equal amount of time to simply learn the principles of <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS flexbox</a>, a process that indeed only took half an hour and undoubtedly saved me time from not having to wrestle with Semantic's framework styles.</p>
+
+  <p>This hand-rolled responsive solution gave me only what I needed and nothing extra. It made the CSS more readable and maintainable, and eliminated the need to load an extra CSS framework library. Now, sitting neatly in my toolbox is a 12-line solution to the problem of responsive web design and, needless to say, I am pleased with this.</p>
+
+  <h4>Unexpected behavior on mobile:</h4>
+
+  <p>The columns weren't breaking down as expected ...</p>
+
+  <%= image_tag "process/21_process_about_phone" %>
+
+  <p>Luckily, the solution was pretty simple. A few helpful articles provided the solution:</p>
+
+  <a href="http://www.webdesignerdepot.com/2012/02/common-mobile-web-design-mistakes/">Mobile Viewport</a><br/>
+  <a href="http://stackoverflow.com/questions/32803764/scale-the-entire-body-when-resizing-the-window">Stack Overflow answer</a><br/>
+  <a href="https://developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag">Mozilla's Docs</a><br/>
+
+  <p>I added this tiny bit of code ...</p>
+
+  <code>
+    &lt;meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" /&gt;
+  </code>
+
+  <p>and it all worked fine.</p>
+
+  <p>Mobile portrait...</p>
+  <%= image_tag "process/22_process_about_phone" %>
+  <p>Mobile landscape...</p>
+  <%= image_tag "process/23_process_about_phone" %>
+  <p>Tablet...</p>
+  <%= image_tag "process/24_process_about_tablet" %>
+
+
+
+
+  <h2>Contact Page</h2>
+
+  <p>Lookin' good on desktop, tablet, and mobile:</p>
+
+  <p>mobile portrait ...</p>
+  <%= image_tag "process/contact_mobile_port" %>
+  <p>mobile landscape ...</p>
+  <%= image_tag "process/contact_mobile_land" %>
+  <%= image_tag "process/contact_mobile_land2" %>
+  <p>tablet portrait ...</p>
+  <%= image_tag "process/contact_ipad_portrait" %>
+  <p>tablet landscape ...</p>
+  <%= image_tag "process/contact_ipad_land" %>
+  <p>desktop ...</p>
+  <%= image_tag "process/contact_desktop" %>
+
+  <p>Next Up: The Footer</p>
+
+
+
+
+  <h2>Footer</h2>
+
+  <p>The mobile footer design was straightforward up until the social icons. Make my own icons? Download some vector icons? I considered making my own raster image sprite, but that would take a while, it would be mildly pixelated, and would not be easy to edit/change/customize (the background color / hover color etc.). I decided to use <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a>, which took two seconds to set up and worked like a charm.</p>
+
+  <p><strong>Looked good on mobile:</strong></p>
+
+  <p>Mobile portrait ...</p>
+  <%= image_tag "process/25_process_footer_mobile" %>
+  <p>Mobile landscape ...</p>
+  <%= image_tag "process/26_process_footer_mobile" %>
+  <p>Tablet portrait ...</p>
+  <%= image_tag "process/27_process_footer_tablet" %>
+  <p>Tablet landscape ...</p>
+  <%= image_tag "process/28_process_footer_tablet" %>
+
+  <p>but not so hot on desktop ...</p>
+  <%= image_tag "process/29_process_footer_desktop" %>
+
+  <p>The mobile design here wasn't quite cutting the mustard. It was time to design and implement a layout specifically for large screens.</p>
+
+
+
+
+  <h2>Footer Desktop Layout</h2>
+
+  <p>Where should the breakpoint be? There's already a breakpoint at 1100px but that's a little wide. 1024 is a common aspect ratio width on a Macbook Pro 13" so that makes 1020px an ideal breakpoint.</p>
+
+  <h3>Desktop Comprehensive</h3>
+
+  <p>So far I had gotten away with only a mobile design comprehensive. Up until this point, I had implemented the mobile front-end based on that comp., then produced the design for desktop on the fly.</p>
+
+  <p>It was time however to design a desktop comprehensive, which would aid in my footer design and also provide an opportunity to assess the page flow of the current desktop front-end implementation. Certain design tweaks could only become evident from the bird-eye view perspective of a full-page comprehensive wireframe.</p>
+
+  <p>In addition to the footer design, I had considered pulling Commerce Kitchen's recent Instagram feed into the layout just for fun. The IG feed would only be visible on desktop, as it wasn't overly important and would take up precious real-estate on mobile. This desktop comprehensive would be an opportunity to decide where the IG feed would be integrated into the layout.</p>
+
+  <p>It started with a screenshot of the site's current rendering on desktop:</p>
+
+  <%= image_tag "process/31_process_desktop" %>
+
+  <p>... Lots of stuff in the middle, lots of un-used space all around.</p>
+
+  <h3>Footer Comprehensive: Complete</h3>
+
+  <p>I settled on a footer design that pleased me. Here's the Illustrator comprehensive:</p>
+  <%= image_tag "process/33_process_comp-footer-desktop" %>
+
+  <p>Left & right justified text/elements created an interesting dynamic and provided implied gutters/borders on either edge of the content.</p>
+
+  <p>I decided to create space for the Instagram feed's 3 most recent posts. The images will provide a fun liveliness to the bottom of the page. Keep in mind, this IG feed will only be implemented on desktop, and not mobile for the reasons stated above.</p>
+
+  <h3>Footer Design Implemented </h3>
+
+  <p>The footer had been implemented and I was still pleased with the design: It was way better than simply allowing the mobile layout to stretch accross the entire screen.</p>
+
+  <p>The old ...</p>
+  <%= image_tag "process/29_process_footer_desktop" %>
+
+  <p>And the new ...</p>
+  <%= image_tag "process/39_process_footer_desktop" %>
+
+
+
+
+  <h2>Instagram: Recent Posts</h2>
+
+  <p>Got the API all hooked up and working ...</p>
+
+  <%= image_tag "process/40_process_footer_desktop" %>
+
+  <p>Unseen in this image: hover effects<br/>
+    on the social links, <br/>
+    the contact info. links, <br/>
+    and the Instagram post images.
+  </p>
+
+
+
+
+  <h2>Docs n stuff ... </h2>
+
+  <p>That's that. The landing page is shipable however the evaluation of this challenge involved three aspects. Design, Code, <strong>and Process</strong></p>
+
+  <p>I wanted to deliver three URLs upon submitting this project: The production URL, the GitHub URL, and an equally accessible URL for the Docs, which I decided to nest pleasantly within this existing Rails app.</p>
+
+  <p>Given time constraints, I prioritized potential features for the docs.</p>
+
+  <ul>
+    <li>Mobile-Friendly</li>
+    <li>Responsive</li>
+    <li>README instructions on GitHub</li>
+    <li>Table of Contents for the Desktop View</li>
+    <li>Table of Contents for the Mobiew View</li>
+  </ul>
+
+  <p>So far, the content has been published in a format that's mobile friendly.</p>
+
+</main>
