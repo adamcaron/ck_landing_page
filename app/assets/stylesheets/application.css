@@ -16,11 +16,37 @@
  *= require_self
  */
 
-body { background-color: #f7f7f7; }
 
-html, body { height: 100%; }
 
-* { font-family: 'Montserrat', sans-serif; }
+/* Layout Element Flow Styles */
+
+.stackable {
+  width: 100%;
+  flex: 1 100%;
+}
+
+.flex-container {
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.pagewrap {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/* Global & general element styles */
+
+textarea:focus, input:focus, button {
+  outline: 0;
+  border: 1px solid #ccc;
+}
 
 textarea, input {
   transition: transform 0.35s, border-color 0.35s;
@@ -30,7 +56,7 @@ textarea, input {
   -webkit-appearance: none;
 }
 
-textarea:focus, input:focus, button {
-  outline: 0;
-  border: 1px solid #ccc;
-}
+* { font-family: 'Montserrat', sans-serif; }
+html, body { height: 100%; }
+body { background-color: #f7f7f7; }
+

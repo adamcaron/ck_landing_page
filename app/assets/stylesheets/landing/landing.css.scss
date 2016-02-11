@@ -192,29 +192,6 @@ header {
   overflow: hidden;
 }
 
-// General Layout Element Flow Styles
-
-.stackable {
-  width: 100%;
-  flex: 1 100%;
-}
-
-.flex-container {
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-.pagewrap { // main & footer
-  margin: 0 auto;
-  max-width: 1100px;
-}
-
 /* ======================================= */
 
 @media (min-width: 700px) {
