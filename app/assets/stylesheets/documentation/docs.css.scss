@@ -11,5 +11,24 @@
 }
 
 #docs {
+  max-width: 475px;
   padding: 30px;
+}
+
+@media (min-width: 475px) {
+
+  #table-of-contents li {
+    margin-bottom: 5px;
+    list-style: none;
+  }
+
+  #table-of-contents ul {
+    padding: 0 0 0 30px;
+  }
+
+  #table-of-contents {
+    top: 0;
+    right: 60px;
+    position: fixed;
+  }
 }
