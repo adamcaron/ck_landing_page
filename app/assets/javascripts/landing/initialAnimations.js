@@ -3,7 +3,7 @@ $( document ).ready(function(){
 
   // Wait for header to finish animating, then apply parallax effect.
   setTimeout(function() {
-    parallaxHeader()
+    applyParallaxHeader()
   }, 2000);
 
 });
@@ -22,7 +22,7 @@ function animateHeader() {
   ]
 
   var menuSequence = [
-    { e: $menuLink, p: { opacity: 1, scale: 1 }, o: { duration: 2000 } },
+    { e: $menuLink, p: { opacity: 1, scale: 1 }, o: { duration: 700 } },
     { e: $menuLink, p: { scale: .85 }, o: { duration: 200 } },
     { e: $menuLink, p: { scale: 1.3 }, o: { duration: 250 } },
     { e: $menuLink, p: { scale: 1.3 }, o: { duration: 200 } },
