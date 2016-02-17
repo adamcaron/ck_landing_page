@@ -1,13 +1,19 @@
 $( document ).ready(function(){
   animateHeader();
-})
 
-function animateHeader(){
-  var $header   = $("header"),
-      $logo     = $("#logo"),
-      $crossbar = $("#crossbar"),
-      $menuLink = $("#menu-opener")
-      $menuLinkIcon = $("#menu-opener i")
+  // Wait for header to finish animating, then apply parallax effect.
+  setTimeout(function() {
+    parallaxHeader()
+  }, 2000);
+
+});
+
+function animateHeader() {
+  var $header       = $("header"),
+      $logo         = $("#logo"),
+      $crossbar     = $("#crossbar"),
+      $menuLink     = $("#menu-opener"),
+      $menuLinkIcon = $("#menu-opener i");
 
   var headerSequence = [
     { e: $header, p: { opacity: 1 }, o: { duration: 550 } },
