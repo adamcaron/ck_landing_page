@@ -1,8 +1,8 @@
-$("#docs").ready(function(){
+$("#docs").ready(function() {
   createTableOfContents();
-})
+});
 
-function createTableOfContents(){
+function createTableOfContents() {
   // Opening tags:
   var ToC = "<nav role='navigation'><h2>Contents:</h2><ul>";
 
@@ -29,6 +29,6 @@ function createTableOfContents(){
   ToC += "</ul></nav>";
 
   $("#table-of-contents").prepend(ToC);
-}
+};
 
 // Source: https://css-tricks.com/automatic-table-of-contents/

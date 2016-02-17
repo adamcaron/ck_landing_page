@@ -6,7 +6,7 @@ function parallaxHeader() {
     "-moz-transition": ".15s ease",
     "-o-transition": ".15s ease",
     "transition": ".15s ease"
-  })
+  });
 
   // Adjust header/logo position based on mouse position
   $(window).on('mousemove', function(event) {
@@ -27,7 +27,7 @@ function parallaxHeader() {
     $hero.css({
       transform: 'translateX(' + left / 48 + 'px) translateY(' + top / 40 + 'px)'
     });
-  })
-}
+  });
+};
 
 // Source: http://codepen.io/yvesvanbroekhoven/pen/igtmy/
