@@ -25,8 +25,8 @@ function animateHeader() {
     { e: $menuLink, p: { opacity: 1, scale: 1 }, o: { duration: 700 } },
     { e: $menuLink, p: { scale: .85 }, o: { duration: 200 } },
     { e: $menuLink, p: { scale: 1.3 }, o: { duration: 250 } },
-    { e: $menuLink, p: { scale: 1.3 }, o: { duration: 200 } },
-    { e: $menuLink, p: { scale: 1 }, o: { duration: 600, easing: [3, 2] } },
+    { e: $menuLink, p: { scale: 1.3 }, o: { duration: 100 } },
+    { e: $menuLink, p: { scale: 1 }, o: { duration: 500, easing: [3, 2] } },
     { e: $menuLinkIcon, p: { scale: .85, rotateZ: "30deg" }, o: { duration: 400 } },
     { e: $menuLinkIcon, p: { scale: 1.2, rotateZ: "-375deg" }, o: { duration: 500 } },
     { e: $menuLinkIcon, p: { scale: 1, rotateZ: "-360deg" }, o: { duration: 800, easing: [3, 1] } }
