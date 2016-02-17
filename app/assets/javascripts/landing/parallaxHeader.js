@@ -1,7 +1,7 @@
-function parallaxHeader() {
+function applyParallaxHeader() {
 
   // Add easing for logo & header's parallax effect
-  $('#logo, #hero').css({
+  $( '#logo, #hero' ).css({
     "-webkit-transition": ".15s ease",
     "-moz-transition": ".15s ease",
     "-o-transition": ".15s ease",
@@ -9,7 +9,7 @@ function parallaxHeader() {
   });
 
   // Adjust header/logo position based on mouse position
-  $(window).on('mousemove', function(event) {
+  $( 'header, #tagline' ).on('mousemove', function(event) {
     var $logo       = $('#logo'),
         $hero       = $('#hero'),
         $container  = $('body'),
