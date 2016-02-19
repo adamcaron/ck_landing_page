@@ -3,7 +3,7 @@
 footer {
   padding: 20px 0 0 0;
   text-align: center;
-  background-color: #323232;
+  background-color: $darkish-gray;
   color: white;
 
   h2 {
@@ -60,7 +60,7 @@ address {
     display: inline-block;
 
     a {
-      color: #323232;
+      color: $darkish-gray;
       background-color: white;
       border-radius: 50%;
       width: 36px;
