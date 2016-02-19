@@ -24,7 +24,7 @@
 
 #social li a:hover {
   color: white;
-  background-color: #62cff0;
+  background-color: $dat-blue;
 }
 
 #social li {
@@ -50,7 +50,7 @@ address a, address a:visited {
 }
 
 address a:hover {
-  color: #F6595B;
+  color: $main-red;
 }
 
 address {
@@ -95,7 +95,7 @@ footer {
   padding: 12px 0;
   border: 0;
   text-transform: uppercase;
-  background-color: #62cff0;
+  background-color: $dat-blue;
   color: white;
 }
 
@@ -127,7 +127,7 @@ footer {
 #contact h2 {
   line-height: 30px;
   font-size: 32px;
-  color: #F6595B;
+  color: $main-red;
   background-color: white;
   padding: 30px 0 20px 30px;
   margin: 0;
@@ -176,7 +176,7 @@ footer {
 
 #crossbar {
   margin-bottom: -114px;
-  background-color: #F6595B;
+  background-color: $main-red;
   height: 114px;
 }
 
@@ -257,7 +257,7 @@ header {
 }
 .widget.follow li a:hover,
 #menu-closer:hover {
-  color: #62cff0;
+  color: $dat-blue;
 }
 
 #menu-closer {
@@ -294,7 +294,7 @@ header {
 
 #menu-opener:hover {
   background-color: white;
-  color: #F6595B;
+  color: $main-red;
 }
 
 #menu-opener {
@@ -312,7 +312,7 @@ header {
   height: 40px;
   width: 40px;
   text-align: center;
-  background-color: #F6595B;
+  background-color: $main-red;
   color: #f8f8f8;
   position: fixed;
 }
