@@ -1,0 +1,44 @@
+// Contact
+
+#contact button {
+  width: 100%;
+  padding: 12px 0;
+  border: 0;
+  text-transform: uppercase;
+  background-color: $dat-blue;
+  color: white;
+}
+
+#contact textarea {
+  margin: 8px 0 0px 0;
+  height: 120px;
+}
+
+#contact input {
+  margin: 8px 0 20px 0;
+}
+
+#contact input,
+#contact textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+}
+
+#contact label {
+  font-style: italic;
+}
+
+#contact form {
+  padding: 20px 30px 40px;
+  background-color: #eaeaea;
+}
+
+#contact h2 {
+  line-height: 30px;
+  font-size: 32px;
+  color: $main-red;
+  background-color: white;
+  padding: 30px 0 20px 30px;
+  margin: 0;
+}

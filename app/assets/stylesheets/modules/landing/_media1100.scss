@@ -1,0 +1,12 @@
+@media (min-width: 1100px) {
+
+  #logo { // Freeze the growth of the logo
+    margin: 99px auto 121px;
+    width: 572px;
+    height: 399px;
+  }
+
+  header { // Keep the header above the fold, from hence forth.
+    max-height: 619px;
+  }
+} // End 1100px
