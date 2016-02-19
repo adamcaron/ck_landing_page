@@ -1,27 +1,10 @@
 // Header
 
-#tagline span {
-  font-size: 20px;
-}
-
-#tagline {
-  line-height: 30px;
-  font-size: 32px;
-  color: #f8f8f8;
-  padding: 30px 0 20px 30px;
-  margin: 0;
-}
-
-#crossbar {
-  margin-bottom: -114px;
-  background-color: $main-red;
-  height: 114px;
-}
-
-#logo {
-  display: block;
-  margin: 9% auto 11% auto;
-  width: 52%;
+header {
+  opacity: 0;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
 }
 
 #hero {
@@ -34,9 +17,26 @@
   margin-top: -2.5%;
 }
 
-header {
-  opacity: 0;
-  background: transparent;
-  overflow: hidden;
-  position: relative;
+#logo {
+  display: block;
+  margin: 9% auto 11% auto;
+  width: 52%;
+}
+
+#crossbar {
+  margin-bottom: -114px;
+  background-color: $main-red;
+  height: 114px;
+}
+
+#tagline {
+  line-height: 30px;
+  font-size: 32px;
+  color: #f8f8f8;
+  padding: 30px 0 20px 30px;
+  margin: 0;
+
+  span {
+    font-size: 20px;
+  }
 }

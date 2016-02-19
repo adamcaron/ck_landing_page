@@ -1,26 +1,26 @@
 // What We Do
 
-#what-we-do p {
-  margin: 0;
-  color: #323232;
-}
-
-#what-we-do h3  {
-  margin: 0 0 18px 0;
-  font-size: 18px;
-  color: #323232;
-}
-
-#what-we-do article .first {
-  border-bottom: 1px solid #eee;
-}
-
-#what-we-do article {
-  line-height: 24px;
-  padding: 35px 30px 30px;
-}
-
 #what-we-do {
   background-color: white;
   margin: 0;
+
+  article {
+    line-height: 24px;
+    padding: 35px 30px 30px;
+
+    .first {
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  h3 {
+    margin: 0 0 18px 0;
+    font-size: 18px;
+    color: #323232;
+  }
+
+  p {
+    margin: 0;
+    color: #323232;
+  }
 }

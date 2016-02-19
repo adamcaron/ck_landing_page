@@ -1,112 +1,110 @@
 @media (min-width: 1020px) {
 
+  // Contact
+  #contact {
+    margin-bottom: 20px;
+  }
+
   // Footer
+  footer {
+    background-color: #212121;
 
-  #social {
-    margin: 30px 0px 25px auto;
-    text-align: center;
+    .stackable {
+      height: 100%;
+      flex: 1 50%;
+    }
+
+    .crossbar {
+      margin-bottom: -62px; // pull headers into crossbar
+      background-color: #323232;
+      height: 62px;
+    }
+
+    h2 {
+      padding: 20px 75px;
+      background-color: transparent;
+    }
+
+    .left div, .right div {
+      background-color: #323232;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .top div {
+      height: 130px;
+      margin: 4px 0;
+    }
+
+    .bottom div {
+      margin: 4px 0 0 0;
+      height: 262px;
+    }
   }
 
-  address {
-    line-height: 22px;
-}
+  #awards {
+    div {
+      padding: 40px 0 30px 75px;
+    }
 
-  #get-in-touch div {
-    padding: 10px 75px 15px 0;
+    img {
+      vertical-align: middle;
+      width: 120px;
+      display: inline;
+      margin: 0px 20px 0px auto;
+    }
   }
 
-  #tidings img {
-    opacity: .9;
-    margin: 70px 5px 0 0;
-    width: 160px;
-    height: 160px;
-  }
+  #partners {
+    div {
+      padding: 40px 75px 30px 0;
+    }
 
-  #tidings img:hover {
-    opacity: 1;
-  }
-
-  #tidings div {
-    width: 100%;
-    padding: 10px 0 15px 75px;
+    img {
+      height: 40px;
+      margin: 10px 0 20px auto;
+      padding: 0;
+    }
   }
 
   #tidings {
     z-index: 1;
     display: block;
+
+    div {
+      width: 100%;
+      padding: 10px 0 15px 75px;
+    }
+
+    img {
+      opacity: .9;
+      margin: 70px 5px 0 0;
+      width: 160px;
+      height: 160px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
-  footer .bottom div {
-    margin: 4px 0 0 0;
-    height: 262px;
+  #get-in-touch div {
+    padding: 10px 75px 15px 0;
   }
 
-  #partners img {
-    height: 40px;
-    margin: 10px 0 20px auto;
-    padding: 0;
+  address {
+    line-height: 22px;
   }
 
-  #partners div {
-    padding: 40px 75px 30px 0;
-  }
-
-  #awards img {
-    vertical-align: middle;
-    width: 120px;
-    display: inline;
-    margin: 0px 20px 0px auto;
-  }
-
-  #awards div {
-    padding: 40px 0 30px 75px;
-  }
-
-  footer .top div {
-    height: 130px;
-    margin: 4px 0;
-  }
-
-  footer .right {
-    text-align: right;
-  }
-
-  footer .left {
-    text-align: left;
-  }
-
-  footer .left div, footer .right div {
-    background-color: #323232;
-  }
-
-  footer h2 span {
-    text-transform: none;
-  }
-
-  footer h2 {
-    padding: 20px 75px;
-    background-color: transparent;
-  }
-
-  footer .crossbar {
-    margin-bottom: -62px; // pull headers into crossbar
-    background-color: #323232;
-    height: 62px;
-  }
-
-  footer .stackable {
-    height: 100%;
-    flex: 1 50%;
-  }
-
-  footer {
-    background-color: #212121;
-  }
-
-  // Contact
-
-  #contact {
-    margin-bottom: 20px;
+  #social {
+    margin: 30px 0px 25px auto;
+    text-align: center;
   }
 
 } // End 1020px
