@@ -1,70 +1,18 @@
 // Footer
 
-#tidings {
-  display: none;
-}
-
-#social i {
-  font-size: 20px;
-  margin-top: 8px;
-}
-
-#social li a {
-  color: #323232;
-  background-color: white;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: inline-block;
-  list-style: none;
-  transition-property: background-color, color;
-  transition-duration: 0.35s;
-}
-
-#social li a:hover {
+footer {
+  padding: 20px 0 0 0;
+  text-align: center;
+  background-color: #323232;
   color: white;
-  background-color: $dat-blue;
-}
 
-#social li {
-  width: 42px; /* fallback for browsers without support for calc() */
-  width: calc(100% / 6.5);
-  display: inline-block;
-}
-
-#social {
-  width: 300px;
-  padding: 0;
-  margin: 40px auto 25px;
-}
-
-.link-divider {
-  margin: 0 10px;
-}
-
-address a, address a:visited {
-  color: white;
-  text-decoration: none;
-  transition: color 0.35s;
-}
-
-address a:hover {
-  color: $main-red;
-}
-
-address {
-  line-height: 24px;
-  font-size: 16px;
-  padding: 20px 0;
-  font-style: normal;
-}
-
-#partners img {
-  height: 32px;
-}
-
-#awards img {
-  width: 175px;
+  h2 {
+    background-color: #212121;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 }
 
 #awards img, #partners img {
@@ -72,17 +20,70 @@ address {
   display: block;
 }
 
-footer h2 {
-  background-color: #212121;
-  padding: 20px 0;
-  margin: 0;
-  font-size: 18px;
-  text-transform: uppercase;
+#awards img {
+  width: 175px;
 }
 
-footer {
-  padding: 20px 0 0 0;
-  text-align: center;
-  background-color: #323232;
-  color: white;
+#partners img {
+  height: 32px;
 }
+
+address {
+  line-height: 24px;
+  font-size: 16px;
+  padding: 20px 0;
+  font-style: normal;
+
+  a, a:visited {
+    color: white;
+    text-decoration: none;
+    transition: color 0.35s;
+  }
+
+  a:hover {
+    color: $main-red;
+  }
+}
+
+.link-divider {
+  margin: 0 10px;
+}
+
+#social {
+  width: 300px;
+  padding: 0;
+  margin: 40px auto 25px;
+
+  li {
+    width: 42px; /* fallback for browsers without support for calc() */
+    width: calc(100% / 6.5);
+    display: inline-block;
+
+    a {
+      color: #323232;
+      background-color: white;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+      list-style: none;
+      transition-property: background-color, color;
+      transition-duration: 0.35s;
+
+      &:hover {
+        color: white;
+        background-color: $dat-blue;
+      }
+    }
+
+    i {
+      font-size: 20px;
+      margin-top: 8px;
+    }
+  }
+}
+
+#tidings {
+  display: none;
+}
+
