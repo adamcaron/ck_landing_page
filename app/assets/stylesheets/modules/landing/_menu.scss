@@ -47,6 +47,7 @@
 }
 
 #menu-closer {
+  z-index: $highest + 1;
   float: right;
   padding: 10px;
   font-size: 14px;
