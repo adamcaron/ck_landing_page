@@ -2,103 +2,126 @@
 
   // Footer
   footer {
-    background-color: #212121;
+    overflow: hidden; // let '.pagewrap:before' and '.pagewrap:after' extend off the page without creating a horizontal scroll-bar
+    position: relative; // necessary for '.pagewrap:before' and '.pagewrap:after' to be 'position:absolute;''
+    padding-top: 0;
+    background-color: $very-dark-gray;
+
+    .pagewrap {
+      background-color: $darkish-gray;
+      padding: 60px 0 80px 0;
+
+      &:before, &:after {
+        width: $footer-gradient-width;
+        top: 0;
+        height: 100%;
+        content: "";
+        position: absolute;
+      }
+
+      &:before {
+        margin-left: -$footer-gradient-width;
+
+        // Gradient
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#212121+0,323232+100 */
+        background: $very-dark-gray; /* Old browsers */
+        background: -moz-linear-gradient(left, $very-dark-gray 0%, $darkish-gray 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, $very-dark-gray 0%, $darkish-gray 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, $very-dark-gray 0%, $darkish-gray 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$very-dark-gray, endColorstr=$darkish-gray, GradientType=1 ); /* IE6-9 */
+      }
+
+      &:after {
+        // Gradient
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#323232+0,212121+100 */
+        background: $darkish-gray; /* Old browsers */
+        background: -moz-linear-gradient(left, $darkish-gray 0%, $very-dark-gray 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, $darkish-gray 0%, $very-dark-gray 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, $darkish-gray 0%, $very-dark-gray 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$darkish-gray, endColorstr=$very-dark-gray, GradientType=1 ); /* IE6-9 */
+      }
+    }
 
     .stackable {
       height: 100%;
       flex: 1 50%;
     }
 
-    .crossbar {
-      margin-bottom: -62px; // pull headers into crossbar
-      background-color: $darkish-gray;
-      height: 62px;
-    }
-
     h2 {
-      padding: 20px $footer-gutter;
+      margin-bottom: $footer-h2-size;
+      padding: 0 0 ($footer-h2-size * .5) 0;
+      border-bottom: 1px solid #656565;
       background-color: transparent;
     }
 
-    .left div, .right div {
-      background-color: $darkish-gray;
+    .left div, .right div, .left h2, .right h2 {
+      width: 100%;
     }
 
     .left {
+      padding: 0 130px 0 $gutter;
       text-align: left;
+      h2, div {
+        float: left;
+      }
     }
 
     .right {
+      max-width: $social-width + 10px;
+      padding: 0 $gutter 0 0;
       text-align: right;
+      h2, div {
+        float: right;
+      }
     }
 
-    .top div {
-      height: 130px;
-      margin: 4px 0;
-    }
-
-    .bottom div {
-      margin: 4px 0 0 0;
-      height: 262px;
+    .top {
+      margin-bottom: 80px;
     }
   }
 
-  #awards {
-    div {
-      padding: 40px 0 30px $footer-gutter;
-    }
-
-    img {
-      vertical-align: middle;
-      width: 120px;
-      display: inline;
-      margin: 0px 20px 0px auto;
-    }
+  #awards img {
+    vertical-align: middle;
+    width: 120px;
+    display: inline;
+    margin: 0px 20px 0px auto;
   }
 
-  #partners {
-    div {
-      padding: 40px $footer-gutter 30px 0;
-    }
-
-    img {
-      height: 40px;
-      margin: 10px 0 20px auto;
-      padding: 0;
-    }
+  #partners img {
+    height: 40px;
+    margin: 10px 0 20px auto;
+    padding: 0;
   }
 
   #tidings {
     z-index: $higher-than-normal;
     display: block;
 
-    div {
-      width: 100%;
-      padding: 10px 0 15px $footer-gutter;
-    }
+    a { color: transparent }
 
     img {
+      transition-property: border, opacity;
+      transition-duration: 0.35s;
+      border: 3px solid transparent;
       opacity: .9;
-      margin: 70px 5px 0 0;
+      margin: 40px 5px 0 0;
       width: 160px;
       height: 160px;
 
       &:hover {
+        border: 3px solid darken( $darkish-gray, 3% );
         opacity: 1;
       }
     }
   }
 
-  #get-in-touch div {
-    padding: 10px $footer-gutter 15px 0;
-  }
-
   address {
+    padding: 0;
     line-height: 22px;
   }
 
   #social {
-    margin: 30px 0px 25px auto;
+    margin: 30px 0 0 auto;
     text-align: center;
   }
 
