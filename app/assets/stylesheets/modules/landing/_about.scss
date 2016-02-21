@@ -8,8 +8,17 @@
     line-height: 24px;
     padding: 35px $gutter 30px;
 
-    .first {
+    &:nth-child(1n) {
       border-bottom: 1px solid #eee;
+    }
+
+    &:nth-child(2n) {
+      position: relative;
+      background: transparent image-url("about-bg.jpg") no-repeat left;
+      background-size: cover;
+      p, ol {
+        color: white;
+      }
     }
   }
 
