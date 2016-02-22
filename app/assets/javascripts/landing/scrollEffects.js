@@ -6,7 +6,7 @@ $( document ).scroll(function() {
 function fadeHeaderOnScrollDown() {
 
   $(window).scroll(function() {
-    var $coverLayer       = $(".opacityCoverLayer")
+    var $coverLayer       = $(".opacity-cover-layer")
         scrollDistance    = $(this).scrollTop(),
         opacityByDistance = (scrollDistance / ( $coverLayer.height() * 1.25 )),
         opacityLevel      = Math.min(opacityByDistance, 1);
