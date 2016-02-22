@@ -6,16 +6,20 @@ body { background-color: #f7f7f7; }
 html, body { height: 100%; }
 
 textarea, input {
-  transition: transform 0.35s, border-color 0.35s;
+  transition: transform .3s, border-color .3s;
   border: 1px solid transparent;
   outline: 0;
   -webkit-border-radius: 0;
   -webkit-appearance: none;
 }
 
+textarea:hover, input:hover, button {
+  border: 1px solid #ccc;
+}
+
 textarea:focus, input:focus, button {
   outline: 0;
-  border: 1px solid #ccc;
+  border: 1px solid $dat-blue;
 }
 
 /* Responsive Layout and Element Flow */
