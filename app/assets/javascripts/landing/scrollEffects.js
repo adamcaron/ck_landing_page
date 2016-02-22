@@ -1,6 +1,24 @@
 $( document ).scroll(function() {
-  keepMenuOutOfFooter()
+  fadeHeaderOnScrollDown();
+  keepMenuOutOfFooter();
 });
+
+function fadeHeaderOnScrollDown() {
+
+  $(window).scroll(function() {
+    var $coverLayer       = $(".opacityCoverLayer")
+        scrollDistance    = $(this).scrollTop(),
+        opacityByDistance = (scrollDistance / ( $coverLayer.height() * 1.25 )),
+        opacityLevel      = Math.min(opacityBasedOnDistance, 1);
+
+    $coverLayer.css({
+      opacity: opacityLevel
+    });
+  });
+
+  // Source:
+  //  http://codepen.io/theaftermath87/pen/mJqywj
+};
 
 function keepMenuOutOfFooter() {
   var $menuLink = $("#menu-opener"),
