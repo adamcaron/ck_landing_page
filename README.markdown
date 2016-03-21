@@ -1,6 +1,6 @@
 # CK Landing
 
-A immersive, fully responsive landing page. This project was intended to demonstrate my ability to solve a UI challenge, with special emphasis on my problem solving process, UI & UX abilities, as well as quality of code implementation.
+An immersive, fully responsive landing page. This project was intended to demonstrate my ability to solve a UI challenge, with special emphasis on my problem solving process, UI & UX abilities, as well as quality of code implementation.
 
 [The production URL can be found here.](http://ck-landing.herokuapp.com/)
 
